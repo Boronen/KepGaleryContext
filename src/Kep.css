@@ -1,0 +1,97 @@
+.nagykepdiv {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 16px;
+}
+
+.nagykepdiv > div {
+  min-width: 0;
+  text-align: center;
+}
+
+.nagykepdiv img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #f3f5f8;
+  object-fit: contain;
+}
+
+.nagykepdiv p {
+  margin: 12px 0 0;
+  font-weight: 600;
+}
+
+.elozo,
+.kovetkezo {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #d1ddeb;
+  border-radius: 10px;
+  background: #eaf0f9;
+  color: #285795;
+  cursor: pointer;
+}
+
+.elozo:hover,
+.kovetkezo:hover {
+  border-color: #3267b3;
+  background: #dce8f8;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 380px;
+  margin: 24px auto 0;
+}
+
+.kepdiv {
+  min-width: 0;
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.kepdiv:hover {
+  border-color: #a6bbd6;
+}
+
+.kepdiv.aktiv {
+  border-color: #3267b3;
+  background: #eaf0f9;
+}
+
+.kepdiv img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+@media (max-width: 560px) {
+  .nagykepdiv {
+    grid-template-columns: 36px minmax(0, 1fr) 36px;
+    gap: 8px;
+  }
+
+  .elozo,
+  .kovetkezo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .galeria {
+    gap: 8px;
+    margin-top: 20px;
+  }
+}
