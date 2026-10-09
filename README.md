@@ -1,4 +1,4 @@
-# Képgaléria – saját jegyzet
+# Képgaléria – jegyzet
 
 Az egész lényege, hogy van egy képlista, és mindig az egyik képet nézem nagyban. Alatta ott vannak a kis képek. Rákattintok valamelyikre, vagy lapozok a nyilakkal, és megváltozik az aktuális kép.
 
